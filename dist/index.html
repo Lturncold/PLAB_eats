@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>PLAB Eats</title>
+        <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+        <link rel="stylesheet" href="./style.css">
+        
+
+    </head>
+
+    <body>
+        <!-- partial:index.partial.html -->
+        <!-- <div id="reminder">Bookmark <a href="https://bit.ly/random-picker">bit.ly/random-picker</a> for quick access
+        </div> -->
+        <!-- <div id="creator">Created and maintained by Elton Koh</div> -->
+        <div class="container">
+            <div class="page-header">
+                <h1>GO WHERE EAT?</h1>
+            </div>
+            <p class="lead">Enter your options. Get a suggestion.</p>
+            <main>
+                <div class="row">
+                    <div class="col-xs-12 col-md-5">
+                        <h2>Lunch Options</h2>
+                        <p>Enter more suggestions on a new line within the text box.</p>
+                        <textarea id="values" class="form-control" rows="15"></textarea>
+                        <br>
+                        <p><b>Note</b>: Suggestions added in text box will be removed with page refresh.</p>
+                        
+                    </div>
+                    <div class="col-xs-12 col-md-5 col-md-offset-2">
+                        <h2>Eat @:</h2>
+                        <p id="instructions"><span class="label label-warning">Click Pick Venue!</span></p>
+                        <div id="results"></div>
+                        <div id="chooser" class="text-center">
+                            <hr>
+                            <button type="button" class="btn btn-success btn-lg">Pick Venue</button>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <hr>
+                <div class="jumbotron">
+                <p class="text-center text-muted">For permanent addition of suggestions, please contact Elton Koh!</p> 
+                </div>
+                <br><br>
+            </main>
+        </div>
+        <footer>
+            <div class="container">
+                <!-- <p class="text-center"><a href="http://aaronsaray.com" title="A Milwaukee-based PHP Programmer">Aaron
+                        Saray</a> created this project - especially for <a href="http://mkepug.org">Milwaukee PHP Users
+                        Group</a>.</p> -->
+                <!-- <p class="text-center">Created and maintained by Elton Koh for PLAB users</p> -->
+                <!-- <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                    <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Features</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Pricing</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
+                  </ul>
+                  <p class="text-center text-muted">Created and maintained by Elton Koh for PLAB users</p> -->
+                  <ul class="nav nav-tabs nav-justified">
+                    <li class="nav-justified"><a href="#" class="nav-link px-1 text-muted">Home</a></li>
+                    <li class="nav-justified"><a href="#" class="nav-link px-1 text-muted">About</a></li>
+                    <li class="nav-justified"><a href="#" class="nav-link px-1 text-muted">Suggestions</a></li>
+                    <li class="nav-justified"><a href="#" class="nav-link px-1 text-muted">FAQs</a></li>
+                    <!-- <li class="nav-justified"><a href="#" class="nav-link px-1 text-muted">About</a></li> -->
+                  </ul>
+                  <p class="text-center text-muted">Created and maintained by Elton Koh for PLAB users</p>
+            </div>
+        </footer>
+        <!-- partial -->
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+        <script src="./script.js"></script>
+        <script src="./apps.js"></script>
+    </body>
+
+</html>

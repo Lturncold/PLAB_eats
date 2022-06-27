@@ -133,7 +133,7 @@
          */
         function handleOneWinner(values) {
             var winner = values[0];
-            $('main').html('<div class="jumbotron"><h1>Congratulations!</h1><h2>There is only one winner!</h2><p>You know exactly who it was!!</p>');
+            $('main').html('<div class="jumbotron text-center"><h1>Good job!</h1><h2>There is only one option!</h2><p>You know exactly where to eat!!</p>');
         }
 
         // init the logic

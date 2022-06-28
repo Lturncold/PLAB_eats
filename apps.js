@@ -1,7 +1,7 @@
 var arr = [ 
     "Hougang Capeview",
     "Kallang Wave Mall",
-    "Macpherson",
+    "Macpherson Stretch",
     "Soi 19",
     "Ci Yuan CC",
     "Hougang Mall",
@@ -11,11 +11,11 @@ var arr = [
     "Lor Ah Soo",
     "Singpost",
     "PLQ",
-    "Mei mei roast at Ubi",
-    "Fish Soup at Defu Lane Hawker Centre",
-    "MacPherson prawn noodle",
-    "Thai Food at Excalibur centre",
-    "Wanton Mee at Ubi Avenue 2 Hawker"
+    "Mei Mei Roast at Ubi",
+    "4 Defu Lane 10 (Fish Soup)",
+    "Excalibur Centre (Thai Food)",
+    "Ubi Avenue 2 (Wanton Mee)",
+    "18 Taiseng"
 ];
 
 document.getElementById("values").value = arr.join('\r\n');

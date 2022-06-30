@@ -15,7 +15,8 @@ var arr = [
     "4 Defu Lane 10 (Fish Soup)",
     "Excalibur Centre (Thai Food)",
     "Ubi Avenue 2 (Wanton Mee)",
-    "18 Taiseng"
+    "18 Taiseng",
+    "Hougang Central"
 ];
 
 document.getElementById("values").value = arr.join('\r\n');

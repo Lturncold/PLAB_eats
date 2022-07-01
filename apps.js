@@ -20,7 +20,7 @@ var arr = [
 ];
 
 document.getElementById("values").value = arr.join('\r\n');
-
+document.getElementById("gmap_canvas").src = "https://maps.google.com/maps?q=" + "670171" + "&t=&z=17&ie=UTF8&iwloc=&output=embed";
 function eraseText() {
     if (document.getElementById("values").value != "") {
         document.getElementById("values").value = "";

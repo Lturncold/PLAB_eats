@@ -39,6 +39,8 @@
             $chooserBox.on('click', 'button', chooseWinner);
         }
 
+        var $gmap_canvas = $('#gmap_canvas');
+
         /**
          * When the textarea changes, handle it
          */
@@ -96,6 +98,7 @@
          */
         function animateResults(values) {
             $resultBox.show();
+            $gmap_canvas.show();
             $resultBox[0].scrollTop = 0;
             $resultBox.empty();
 

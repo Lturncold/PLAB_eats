@@ -18,6 +18,38 @@ var arr = [
     "18 Taiseng",
     "805 Hougang Central"
 ];
+
+let intro = document.querySelector('.intro');
+let logo = document.querySelector('.logo-header');
+let logoSpan = document.querySelectorAll('.logo');
+
+window.addEventListener('DOMContentLoaded', ()=>{
+
+    setTimeout(() => {
+       
+        logoSpan.forEach((span, idx)=>{
+            setTimeout(() => {
+               span.classList.add('active'); 
+            }, (idx + 1) * 400)
+        });
+
+        setTimeout(() => {
+           logoSpan.forEach((span,idx)=>{
+           
+                setTimeout(() => {
+                    span.classList.remove('active');
+                    span.classList.add('fade');
+                }, (idx + 1) * 50)
+           }) 
+        }, 2000);
+
+        setTimeout(() => {
+            intro.style.top = '-100vh';
+        }, 2300);
+
+    })
+})
+
 // const {values} = require('script.js');
 document.getElementById("values").value = arr.join('\r\n');
 // document.getElementById("gmap_canvas").src = "https://maps.google.com/maps?q=" + "670171" + "&t=&z=17&ie=UTF8&iwloc=&output=embed";
@@ -31,12 +63,13 @@ function eraseText() {
 }
 
 function refreshPage() {
-    location.reload();
-    return false;
+    // location.reload();
+    // return false;
+    document.getElementById("values").value = arr.join('\r\n');
 }
 
 const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
-const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+// const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
 
 // const textarea = document.getElementById('values');
 
@@ -46,3 +79,5 @@ const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstra
 
 //   textarea.value = '';
 // });
+
+

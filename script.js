@@ -116,6 +116,7 @@
             });
 
             // document.getElementById("testh3").innerHTML = values[values.length - 1].replaceAll(' ','%20');
+            //reference the results in results box to google maps
             document.getElementById("gmap_canvas").src = "https://maps.google.com/maps?q=" + values[values.length - 1].replaceAll(' ','%20') + "&t=&z=17&ie=UTF8&iwloc=&output=embed";
             // document.getElementById("shuffledvalues").value = values.join('\r\n');
             // const testing123 = values[values.length - 1].replaceAll(' ','%20');

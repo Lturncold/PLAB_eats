@@ -18,7 +18,7 @@ var arr = [
     "18 Taiseng",
     "805 Hougang Central"
 ];
-
+// Splash Intro
 let intro = document.querySelector('.intro');
 let logo = document.querySelector('.logo-header');
 let logoSpan = document.querySelectorAll('.logo');

@@ -18,6 +18,21 @@ var arr = [
     "18 Taiseng",
     "805 Hougang Central"
 ];
+
+var sampleData = [
+    { name: 'asparagus', type: 'vegetables' },
+    { name: 'bananas',  type: 'fruit' },
+    { name: 'goat', type: 'meat' },
+    { name: 'cherries', type: 'fruit' },
+    { name: 'fish', type: 'meat' }
+];
+
+var sampleDataName =[];
+
+for(var key in sampleData) {
+    sampleDataName.push(sampleData[key].name);
+}
+
 // Splash Intro
 let intro = document.querySelector('.intro');
 let logo = document.querySelector('.logo-header');
@@ -50,10 +65,12 @@ window.addEventListener('DOMContentLoaded', ()=>{
     })
 })
 
-// const {values} = require('script.js');
-document.getElementById("values").value = arr.join('\r\n');
-// document.getElementById("gmap_canvas").src = "https://maps.google.com/maps?q=" + "670171" + "&t=&z=17&ie=UTF8&iwloc=&output=embed";
-// document.getElementById("testh3").innerHTML = values[0];
+
+document.getElementById("values").value = arr.join('\r\n'); //set the values in textbox to the array
+
+// document.getElementById("recoList").value = sampleData.join('\r\n');
+
+document.getElementById("recoList").value = sampleDataName.join('\r\n');
 
 function eraseText() {
     if (document.getElementById("values").value != "") {
@@ -79,5 +96,3 @@ const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]
 
 //   textarea.value = '';
 // });
-
-

@@ -44,20 +44,23 @@
                         <div id="chooser" class="text-center">
                             <button type="button" class="btn btn-success btn-lg">Suggestion Please!</button>
                         </div>
-                            <h3 id="testh3"></h3> 
-                            <!-- <textarea id="shuffledvalues"  rows="15"></textarea>  for testing only-->
-                            <div class="mapouter">
-                                <div class="gmap_canvas ">
-                                    <iframe width=100% height=100% id="gmap_canvas" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
-                                    </iframe>
-                                    <br>
-                                    <style>.mapouter{position:relative;text-align:right;height:auto;width:auto;}</style>
-                                    <style>.gmap_canvas{overflow:hidden;background:none!important;height:auto;width:auto;}</style>
-                                </div>
+                            <!-- Add Google Maps -->
+                        <div class="mapouter">
+                            <div class="gmap_canvas ">
+                                <iframe width=100% height=100% id="gmap_canvas" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+                                </iframe>
+                                <br>
+                                <style>.mapouter{position:relative;text-align:right;height:auto;width:auto;}</style>
+                                <style>.gmap_canvas{overflow:hidden;background:none!important;height:auto;width:auto;}</style>
                             </div>
+                        </div>
+                        <div id="recommendations">
+                            <h2>What's good here:</h2>
+                            <textarea id="recoList" class="form-control" rows="5"></textarea>
+                        </div>
                         <hr>                       
                     </div>
-                    <!-- page break -->
+                    <!-- page break to Lunch Options -->
                     <div class="col-sm-auto col-md-5 col-centered text-center">
                         <h2 class="">Lunch Options</h2>
                         <!-- <h3 class="">You may:</h3> -->

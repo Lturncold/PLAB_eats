@@ -27,8 +27,7 @@
          * The results box
          * @type {*|jQuery|HTMLElement}
          */
-        var $resultBox = $('#results');
-
+        var $resultBox = $('#results');       
         /**
          * The initialization function sort of
          *
@@ -40,6 +39,10 @@
         }
 
         var $gmap_canvas = $('#gmap_canvas');
+
+        var $recommendations = $('#recommendations');
+
+        var $recoList = $('#recoList');
 
         /**
          * When the textarea changes, handle it
@@ -98,7 +101,8 @@
          */
         function animateResults(values) {
             $resultBox.show();
-            $gmap_canvas.show();
+            $gmap_canvas.show(); //show the google map when click for results
+            $recommendations.show(); //show the recommendations when click for results
             $resultBox[0].scrollTop = 0;
             $resultBox.empty();
 
@@ -111,6 +115,8 @@
 
             $resultBox.append(resultList);
 
+            // $recommendations.append(resultList);
+
             $resultBox.animate({
                 scrollTop: $resultBox[0].scrollHeight
             });
@@ -118,8 +124,7 @@
             // document.getElementById("testh3").innerHTML = values[values.length - 1].replaceAll(' ','%20');
             //reference the results in results box to google maps
             document.getElementById("gmap_canvas").src = "https://maps.google.com/maps?q=" + values[values.length - 1].replaceAll(' ','%20') + "&t=&z=17&ie=UTF8&iwloc=&output=embed";
-            // document.getElementById("shuffledvalues").value = values.join('\r\n');
-            // const testing123 = values[values.length - 1].replaceAll(' ','%20');
+            // document.getElementById("recoList").value = sampleData[0].name;
         }
 
         /**

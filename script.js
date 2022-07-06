@@ -121,15 +121,12 @@
                 scrollTop: $resultBox[0].scrollHeight
             });
 
-            // document.getElementById("testh3").innerHTML = values[values.length - 1].replaceAll(' ','%20');
             //reference the results in results box to google maps
             document.getElementById("gmap_canvas").src = "https://maps.google.com/maps?q=" + values[values.length - 1].replaceAll(' ','%20') + "&t=&z=17&ie=UTF8&iwloc=&output=embed";
-            // document.getElementById("recoList").value = foodPlaces[0].reco;
+            // show the recommended food from results in results box
             var x = foodPlaces.find(foodPlaces => foodPlaces.name === values[values.length - 1]).reco;
-            // var y = x.split(",").join("\n");
             var y = x.split(",").map(item => item.trim());
             var z = y.join("\n");
-            // document.getElementById("recoList").value = foodPlaces.find(foodPlaces => foodPlaces.name === values[values.length - 1]).reco;
             document.getElementById("recoList").value = z;
         }
 

@@ -18,7 +18,7 @@ var arr = [
   "18 Taiseng",
   "805 Hougang Central",
 ];
-
+// Food data
 var foodPlaces = [
   { name: "Hougang Capeview", reco: "Ayam Penyet, Ban Mian" },
   { name: "Kallang Wave Mall", reco: "Astons, Encik Tan, Yu Kee" },
@@ -49,20 +49,6 @@ var foodPlacesName = [];
 for (var item in foodPlaces) {
   foodPlacesName.push(foodPlaces[item].name);
 };
-
-var sampleData = [
-  { name: "asparagus", type: "vegetables" },
-  { name: "bananas", type: "fruit" },
-  { name: "goat", type: "meat" },
-  { name: "cherries", type: "fruit" },
-  { name: "fish", type: "meat" },
-];
-
-var sampleDataName = [];
-
-for (var key in sampleData) {
-  sampleDataName.push(sampleData[key].name);
-}
 
 // Splash Intro
 let intro = document.querySelector(".intro");

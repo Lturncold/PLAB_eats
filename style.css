@@ -85,6 +85,12 @@ footer a:hover {
     display: none;
 }
 
+/* Recommendations from results */
+
+#recommendations{
+    display: none;
+}
+
 /* Splash Intro CSS */
 
 .intro {

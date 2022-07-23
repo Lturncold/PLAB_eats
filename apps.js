@@ -26,7 +26,7 @@ var foodPlaces = [
   { name: "Soi 19 Kovan", reco: "Wanton Mee" },
   { name: "Ci Yuan CC", reco: "Lor Mee" },
   { name: "Hougang Mall", reco: "Kopitiam Ban Mian, Saizeriya" },
-  { name: "Hougang Green", reco: "Arnold Chicken" },
+  { name: "Hougang Green", reco: "Arnold Chicken, Thai Food" },
   { name: "Samwitch", reco: "Beef Sandwich, Chicken Sandwich" },
   {
     name: "Breadtalk HQ",
@@ -42,6 +42,8 @@ var foodPlaces = [
   { name: "18 Taiseng", reco: "Let's Eat, Tim Ho Wan, Korean Food" },
   { name: "805 Hougang Central", reco: "Tom Yum Ban Mian" },
   { name: "Nakhon Kovan", reco: "Thai Food" },
+  { name: "Ikea Tampines", reco: "Meat Balls, Daim Cake" },
+  { name: "Hougang Rivercourt", reco: "Thai Food @ Kofu" },
 ];
 
 var foodPlacesName = [];

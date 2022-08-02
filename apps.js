@@ -84,10 +84,7 @@ window.addEventListener("DOMContentLoaded", () => {
 // document.getElementById("values").value = arr.join("\r\n"); //set the values in textbox to the array
 document.getElementById("values").value = foodPlacesName.join("\r\n"); //set the values in textbox to the array
 
-// document.getElementById("recoList").value = sampleData.join('\r\n');
-
-// document.getElementById("recoList").value = sampleDataName.join("\r\n");
-
+// Create New List button function
 function eraseText() {
   if (document.getElementById("values").value != "") {
     document.getElementById("values").value = "";
@@ -95,10 +92,11 @@ function eraseText() {
   }
 }
 
+// Reset button function
 function refreshPage() {
   // location.reload();
   // return false;
-  document.getElementById("values").value = arr.join("\r\n");
+  document.getElementById("values").value = foodPlacesName.join("\r\n");
 }
 
 const tooltipTriggerList = document.querySelectorAll(

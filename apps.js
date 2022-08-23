@@ -34,7 +34,7 @@ var foodPlaces = [
   },
   { name: "Lor Ah Soo Hawker", reco: "Lor Mee, Crispy Pancake" },
   { name: "Singpost Centre", reco: "Lao Wang" },
-  { name: "PLQ", reco: "LIKE Yakiniku, Playmade" },
+  { name: "PLQ", reco: "LIKE Yakiniku, Playmade, Auntie Anne's" },
   { name: "Mei Mei Roast at Ubi", reco: "Roast Meat" },
   { name: "4 Defu Lane 10", reco: "Fish Soup" },
   { name: "Excalibur Centre", reco: "Thai Food" },
@@ -46,11 +46,19 @@ var foodPlaces = [
   { name: "Hougang Rivercourt", reco: "Thai Food @ Kofu" },
 ];
 
+// Create Array for just venue name
 var foodPlacesName = [];
 
 for (var item in foodPlaces) {
   foodPlacesName.push(foodPlaces[item].name);
-};
+}
+
+// Create Array for just venue reco
+var foodPlacesReco = [];
+
+for (var item in foodPlaces) {
+  foodPlacesReco.push(foodPlaces[item].reco);
+}
 
 // Splash Intro
 let intro = document.querySelector(".intro");
@@ -112,3 +120,68 @@ const tooltipTriggerList = document.querySelectorAll(
 
 //   textarea.value = '';
 // });
+
+// Generate List for Venues and Reco
+var ol = document.createElement("ol");
+// var ul = document.createElement("ul");
+// for (let i of foodPlacesName) {
+//   let li = document.createElement("li");
+//   li.innerHTML = i;
+//   ol.appendChild(li);
+
+// for (let i of foodPlacesReco) {
+//   let li = document.createElement("li");
+//   li.innerHTML = i;
+//   ul.appendChild(li);
+// }
+// };
+for (i = 0; i < foodPlacesName.length; ++i) {
+  // Create an item for each one
+  let li = document.createElement("li");
+
+  // Add the item text
+  li.innerHTML = foodPlacesName[i];
+
+  // Add listItem to the listElement
+  ol.appendChild(li);
+  let ul = document.createElement("ul");
+  let liTwo = document.createElement("li");
+  liTwo.innerHTML = foodPlacesReco[i];
+  ul.appendChild(liTwo);
+}
+
+//document.getElementById("ulOne").appendChild(ol);
+// document.getElementById("venues").appendChild(ol);
+// document.getElementById("abcde").appendChild(ul);
+
+//document.getElementById("testABC").innerHTML = arr[0];
+
+let myTable = document.querySelector("#table");
+let employees = [
+  { name: "James", age: 21, country: "United States" },
+  { name: "Rony", age: 31, country: "United Kingdom" },
+  { name: "Peter", age: 58, country: "Canada" },
+  { name: "Marks", age: 20, country: "Spain" },
+];
+let headers = ["Venue", "Recommendation"];
+
+let table = document.createElement("table");
+let headerRow = document.createElement("tr");
+headers.forEach((headerText) => {
+  let header = document.createElement("th");
+  let textNode = document.createTextNode(headerText);
+  header.appendChild(textNode);
+  headerRow.appendChild(header);
+});
+table.appendChild(headerRow);
+foodPlaces.forEach((emp) => {
+  let row = document.createElement("tr");
+  Object.values(emp).forEach((text) => {
+    let cell = document.createElement("td");
+    let textNode = document.createTextNode(text);
+    cell.appendChild(textNode);
+    row.appendChild(cell);
+  });
+  table.appendChild(row);
+});
+myTable.appendChild(table);

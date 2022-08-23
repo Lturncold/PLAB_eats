@@ -130,3 +130,13 @@ footer a:hover {
     opacity: 0;
     transition: ease-in-out 0.5s;
 }
+
+/* Table Styl */
+#table {
+    display: block;
+    margin-top: 0px;
+}
+th, td {
+    border: 1px solid black;
+    padding: 5px;
+}
